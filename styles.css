@@ -1,0 +1,1410 @@
+body{
+    background-color: #F0F0F0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}                    
+/* Start of first page */
+.firstpage{
+    background-image: url(/Images/figma.png);
+    width: 100%;
+    background-size:cover;   
+}
+
+.firstpage .first{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    
+}
+.menu{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);   
+}
+
+.menu1 ul {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    list-style-type: none;
+}
+.menu1 #home{
+    color: #FF595F;
+}
+.menu1 a{
+    text-decoration: none;
+    color: black;
+    padding-right: 1.5cm;
+}
+.menu2{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    text-align: right;
+    margin-top: 12px;
+    margin-left: 15cm;
+    color: white;
+}
+.menu2 button{
+    padding: 7px 15px;
+    background-color: transparent;
+    color: white;
+    border-color: #FF595F;
+    border-radius: 5px;
+    margin-right:1cm ;
+}
+.menu2 #btn2{
+    background-color: #FF595F; 
+}
+.menu2 #btn1{
+    border: none ;
+}
+.secondA{
+    padding-left: 25px;
+}
+
+.secondA h1{
+    font-size: 2cm;  
+}
+.secondA #image1{
+    position: relative;
+    left: 12cm;
+    width: 100%;
+    background-size: contain;
+    float: right; 
+}
+.secondA #find{
+    margin-top: 1cm;
+    padding: 10px 25px;
+    background-image: linear-gradient(to top right,rgb(218, 24, 163),rgb(236, 131, 45) );
+    border-radius: 6px;
+    border: none;
+    color: white;
+   
+}
+.words #play{
+    margin-left: 15px;
+    border-radius: 100%;
+    padding: 20px 20px;
+    background-color: rgb(218, 24, 163);
+    color: white;
+    border: none;
+}
+@media only screen and (max-width:700px){
+    .first{
+         grid-template-columns: repeat(1,1fr);
+       }
+       .menu{
+        grid-template-columns: repeat(1,1fr);
+       }
+       .menu2{
+        grid-template-columns: repeat(1,1fr);
+        float: left;
+        padding-left: 2px;
+       }
+       .secondA h1{
+        font-size: 1cm;  
+    }
+       .menu1 ul {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        line-height: 1cm; 
+    }
+
+     }
+/* Start of second page */
+.secondB{
+    margin-top: 2cm;
+    margin-bottom: 2cm;
+}
+.secondB h1{
+    font-size: 40px;
+    text-align: center;
+}
+.shoeA{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+@media only screen and (max-width:700px){
+    .shoeA{
+        grid-template-columns: repeat(1,1fr);  
+   
+    }
+}
+.shoeA h2{
+    position: relative;
+    left: 5.5cm;
+}
+.shoeA p{
+    position: relative;
+    left: 5.5cm;
+}
+.shoeA button{
+    position: relative;
+    left: 5.5cm;
+}
+.secondB img{
+    position: relative;
+    width: 150%;
+    right: 2em;
+    top: 1px;
+    left: 1px;
+}
+@media only screen and (max-width:700px){
+    .shoeA h2{
+        position: relative;
+        left: 4cm;
+    }
+    .shoeA p{
+        position: relative;
+        left: 4cm;
+    }
+    .shoeA button{
+        position: relative;
+        left: 4cm;
+    }
+    .secondB img{
+    position: relative;
+    width: 100%;
+    right: 2em;
+    top: 1px;
+    left: 1px;
+    }
+    .secondB #white1{
+        position: relative;
+        width: 5cm;
+        height: 6cm;
+        background-color: white;
+        margin-left: 25px;
+        border-radius: 15px;
+        box-shadow: 10px 10px 35px rgb(101, 115, 120);
+        margin-bottom: 1cm;
+    } 
+}
+.secondB #white1{
+    position: relative;
+    width: 10cm;
+    height: 6cm;
+    background-color: white;
+    margin-left: 25px;
+    border-radius: 15px;
+    box-shadow: 10px 10px 35px rgb(101, 115, 120);
+}
+#grad1{
+    position: relative;
+    width: 5cm;
+    height: 6cm;
+    background-image: linear-gradient(to bottom,rgb(9, 204, 218),rgb(145, 29, 187));
+    border-radius: 15px;
+}
+
+#grad2{
+    position: relative;
+    top: 1px;
+    width: 5cm;
+    height: 6cm;
+    background-image: linear-gradient(to bottom,rgb(9, 204, 218),rgb(201, 17, 51));
+    border-radius: 15px;
+}
+
+#grad3{
+    position: relative;
+    width: 5cm;
+    height: 6cm;
+    background-image: linear-gradient(to bottom,rgb(104, 88, 91),rgb(201, 17, 51));
+    border-radius: 15px;
+}
+.side{
+    position: absolute;
+    top: 55px;
+    left: 45px;
+}
+#grad3 img{
+    width: 150%;
+}
+.side button{
+    background-color: #FF595F;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 12px;
+    color: white;
+}
+
+/* Start of third page */
+.thirdpage{
+    margin-top: 2cm;
+}
+.thirdpage h1{
+    font-size: 40px;
+    text-align: center;
+}
+
+.thirdpage li #red{
+    color: #FF595F;
+    text-decoration: none;
+
+}
+.thirdpage ul{
+    font-weight: 700;
+    font-size: 25px;
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(4,1fr); 
+}
+.thirdpage li{
+    padding-right: 2cm;
+}
+.shoeB{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-left: 25px;
+}
+@media only screen and (max-width:700px){
+    .shoeB{
+        grid-template-columns: repeat(1,1fr);  
+    }
+    .thirdpage ul{
+        font-weight: 700;
+        font-size: 25px;
+        list-style-type: none;
+        grid-template-columns: repeat(1,1fr); 
+    }
+}
+.shoeB .white1{
+    margin-top: 2cm;
+    width: 8cm;
+    height: 7cm;
+    background-color: white;
+    border-radius: 5px;
+    margin-left: 25px;
+}
+.descrip{
+    position: absolute;
+    top: 38.7cm;
+    padding-left: 15px;
+}
+.white1 img{
+    position: relative;
+    width: 80%;
+}
+.white1 h2{
+    padding-top: 1px;
+    font-size: 1.3em;
+}
+.white1 #heart{
+   position: absolute;  
+   color: black;
+   top: 35.2cm;
+   padding-left: 5px;
+   font-size: 25px;
+}
+.white1 #bag i{
+    float: right;
+    padding-left: 5cm;
+    font-size: 1.3em;
+    bottom: 2em;
+}
+.white1 p{
+    font-size: 10px;
+    color:grey;
+}
+
+.white1 h3{
+    font-size: 1em;
+}
+
+.white1 #star{
+    font-size: 8px;
+    position: absolute;
+    color:grey;
+    text-align: right !important;
+    padding-bottom: 2em;
+    padding-left: 9em;
+}
+ .white1 #star i{
+    color: yellow;
+ }
+
+ .shoeC{
+    display: grid;
+    margin-left: 25px;
+    margin-bottom: 1cm;
+    grid-template-columns: repeat(4,1fr); 
+}
+@media only screen and (max-width:700px){
+    .shoeC{
+        grid-template-columns: repeat(1,1fr);  
+    }
+    .descrip{
+        position: absolute;
+        top: 58.9cm;
+        padding-left: 15px;
+    }
+    .white2 #heart2{
+        position: relative;
+        color: black;
+        top: 64.2cm;
+        padding-left: 5px;
+        font-size: 25px;
+     }
+}
+ .shoeC .white2{
+    margin-top: 2cm;
+    width: 8cm;
+    height: 7cm;
+    background-color: white;
+    border-radius: 5px;
+    margin-left: 25px;
+}
+.descrip2{
+    position: absolute;
+    top: 47.7cm;
+    padding-left: 15px;
+}
+.white2 img{
+    position: relative;
+    width: 80%;
+}
+.white2 h2{
+    padding-top: 1px;
+    font-size: 1.3em;
+}
+.white2 #heart2{
+   position: absolute;
+   color: black;
+   top: 44.2cm;
+   padding-left: 5px;
+   font-size: 25px;
+}
+.white2 #bag2 i{
+    float: right;
+    padding-left: 5cm;
+    font-size: 1.3em;
+    bottom: 2em;
+}
+.white2 p{
+    font-size: 10px;
+    color:grey;
+}
+
+.white2 h3{
+    font-size: 1em;
+}
+
+.white2 #star2{
+    font-size: 8px;
+    position: absolute;
+    color:grey;
+    text-align: right !important;
+    padding-bottom: 2em;
+    padding-left: 9em;
+}
+ .white2 #star2 i{
+    color: yellow;
+ }
+
+#button{
+    text-align: center ;
+}
+#button button{
+    color: rgb(165, 14, 140);
+    padding: 10px 20px;
+    border-radius: 5px;
+    background: linear-gradient(white, white) padding-box,linear-gradient(to top right, rgb(184, 28, 190), rgb(202, 144, 19)) border-box;
+    border: 3px solid transparent;
+}
+/* Start of the forth page */
+.forthpage{
+    margin-left: 25px;
+}
+.forthpage h1{
+    font-size: 40px;
+    text-align: center;
+}
+.shoeD{
+    display: grid;
+    display: flex;
+    grid-template-columns: repeat(2,1fr);  
+}
+@media only screen and (max-width:700px){
+    .shoeD{
+        grid-template-columns: repeat(1,1fr);  
+    }
+    .shoeD img{
+        position: relative;
+        width: 5%;   
+    }
+    .forthpage h1{
+        font-size: 20px;
+        text-align: center;
+    }
+    #white1 b {
+        font-size: 15px;
+        color: gray;
+        text-decoration: line-through #FF595F;
+    }
+    #white1 h2 {
+        font-size: 15px;
+    }
+    .shoeD p{
+        font-size: 10px;
+    }
+    #white1 .btn1{
+        padding: 5px 16px;
+        background:linear-gradient(to top right, rgb(210, 16, 174), rgb(202, 144, 19));
+        border: none;
+        border-radius: 6px;
+        color: white;
+        font-size: 9px;
+        font-weight: bold;
+    }
+    .buttons .btn2{
+        padding: 5px 16px;
+        border-radius: 6px;
+        background: linear-gradient(white, white) padding-box,linear-gradient(to top right, rgb(184, 28, 190), rgb(202, 144, 19)) border-box;
+        border: 3px solid transparent;
+        color:rgb(165, 14, 140) ;
+        font-size: 9px;
+        font-weight: bold;
+    }
+}
+.descrip1{
+    position: relative;
+    padding-left: 2cm;
+}
+.shoeD img{
+    position: relative;
+    width: 20%;
+}
+.shoeD #image{
+    position: relative;
+    width: 20%;   
+}
+.forthpage #white1{
+    display: grid;
+    width: 11cm;
+    height: 10cm;
+    background-color: white;
+    margin-right: 2cm;
+    border-radius: 5px;
+    box-shadow: 10px 10px 35px rgb(101, 115, 120);
+}
+#white1 h1{
+    color: #FF595F;
+}
+#white1 h4 b{
+    color: #FF595F;
+}
+#white1 b {
+    color: gray;
+    text-decoration: line-through #FF595F;
+}
+
+#white1 h4{
+    color: gray;
+}
+#white1 .btn1{
+    padding: 10px 21px;
+    background:linear-gradient(to top right, rgb(210, 16, 174), rgb(202, 144, 19));
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-size: 9px;
+    font-weight: bold;
+}
+.buttons .btn2{
+    padding: 10px 21px;
+    border-radius: 6px;
+    background: linear-gradient(white, white) padding-box,linear-gradient(to top right, rgb(184, 28, 190), rgb(202, 144, 19)) border-box;
+    border: 3px solid transparent;
+    color:rgb(165, 14, 140) ;
+    font-size: 9px;
+    font-weight: bold;
+}
+
+/* Fifth page */
+.fifthpage h3{
+    padding-top: 3cm;
+    text-align: center;
+    color: #FF595F;
+}
+.fifthpage h1{
+    font-size: 40px;
+    padding-left: 25px;
+}
+.circles{
+    display: flex;
+   padding-left: 25px;
+}
+#c1{
+    border-radius: 100%;
+    border: none;
+    width: 5cm;
+    background-color: rgb(226, 201, 226) ;
+    padding: 2px;
+    width: 0.4cm;
+    height: 0.4cm;
+    margin-right: 10px; 
+}
+#c2{
+    border-radius: 100%;
+    border: none;
+    width: 5cm;
+    background-color: #FF595F ;
+    padding: 2px;
+    width: 0.4cm;
+    height: 0.4cm;
+    margin-right: 10px;
+}
+#c3{
+    border-radius: 100%;
+    border: none;
+    width: 5cm;
+    background-color: rgb(226, 201, 226) ;
+    padding: 2px;
+    width: 0.4cm;
+    height: 0.4cm;
+    margin-right: 10px;
+}
+#c4{
+    border-radius: 100%;
+    border: none;
+    width: 5cm;
+    background-color: rgb(226, 201, 226) ;
+    padding: 2px;
+    width: 0.4cm;
+    height: 0.4cm;
+}
+.images{
+    display: flex;
+    position: relative; 
+    top: 11cm;  
+    right: 4cm;
+}
+#undo{
+    border: 1px solid black;
+    margin-right: 15px;
+    border-radius: 7px;
+    width: 1cm;
+    height: 1cm;
+}
+.ref{
+    display: grid;
+    grid-template-columns: repeat(2,1fr); 
+} 
+.below{
+    position: relative;
+    margin-top: 3cm;
+    padding-left: 50px;
+    padding-top: 7.9cm;
+    width: 15cm;
+    background-color: #F0F0F0;
+    border: 3px rgb(182, 178, 178) solid;
+    border-radius: 10px;
+}
+.above{
+    position: relative;
+    left: 18cm;
+    margin-right: 3cm;
+    padding-top: 1cm;
+    padding-left: 50px;
+    width: 15cm;
+    height: 10cm;
+    background-color: #F0F0F0;
+    border-radius: 10px;
+    z-index: 9;
+    box-shadow: 0px 10px 35px rgb(101, 115, 120);
+}
+#nadir{
+    padding-top: 5cm;
+}
+#ux1{
+    color: grey;
+}
+.fifthpage img{
+    position: relative;
+    width: 5%;
+    left: 25cm;
+    border-radius: 100%;
+    top: 2cm;
+    z-index:19 ;
+}
+@media only screen and (max-width:700px){
+    .ref{
+        grid-template-columns: repeat(1,1fr);  
+    }
+    .fifthpage img{
+        position: relative;
+        width: 15%;
+        border-radius: 100%;
+        top: 6cm;
+        z-index:19 ;
+    }
+    .above{
+        position:absolute;
+        margin-right: 5cm;
+        padding-top: 1cm;
+        padding-left: 50px;
+        width: 10cm;
+        height: 7cm;
+        background-color: #F0F0F0;
+        border-radius: 10px;
+        z-index: 9;
+        box-shadow: 0px 10px 35px rgb(101, 115, 120);
+    }
+    .below{
+        position: relative;
+        padding-left: 50px;
+        padding-top: 5cm;
+        width: 10cm;
+        background-color: #F0F0F0;
+        border: 3px rgb(182, 178, 178) solid;
+        border-radius: 10px;
+    }
+    #nadir{
+        padding-top: 1.4cm;
+    }
+    .images{
+        display: flex;
+        position: relative; 
+        top: 9cm;  
+        right: 24cm;
+    }
+}
+/* Sixth page */
+.sixthpage{
+    margin: 2cm 2cm;
+    border-radius: 55px;
+    background-color: rgb(245, 164, 211);
+    padding-top: 2cm;
+    padding-bottom: 2cm;
+}
+.sixthpage h1{
+   text-align: center;
+   font-size: 40px;
+}
+.sixthpage .six{
+    margin-top: 2cm;
+    margin-left: 15cm;
+}
+.sixthpage #email{
+    font-size: 17px;
+    padding: 20px 80px 20px 60px;
+    border: none;
+    border-radius: 14px;
+}
+#envelope{
+    position: relative;
+    top: 3.3cm;
+    left: 15.5cm;
+    font-size: 25px;
+}
+.sixthpage button{
+    padding: 20px 50px; 
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+    border-radius: 15px;
+    background-image: linear-gradient(to top right, rgb(184, 28, 190), rgb(202, 144, 19));
+    color: white;  
+}
+@media only screen and (max-width:700px){
+    .sixthpage{
+        margin: 2cm 0.4cm;
+        border-radius: 55px;
+        background-color: rgb(245, 164, 211);
+        padding: 2cm 20px;
+    }
+    .sixthpage h1{
+        text-align: center;
+        font-size: 14px;
+     }
+     .sixthpage .six{
+        margin-top: 1cm;
+        margin-left:1cm;
+    }
+    .sixthpage #email{
+        font-size: 10px;
+        padding: 10px 40px 10px 30px;
+        border: none;
+        border-radius: 14px;
+    }
+    #envelope{
+        position: relative;
+        top: 1.7cm;
+        left: 1.2cm;
+        font-size: 15px;
+    }
+    .sixthpage button{
+        margin-top: 20px;
+        padding: 10px 20px; 
+        font-size: 10px;
+        font-weight: 600;
+        border: none;
+        border-radius: 15px;
+        background-image: linear-gradient(to top right, rgb(184, 28, 190), rgb(202, 144, 19));
+        color: white;  
+    }
+}
+/* Last page */
+.footer{
+    background-color: #FF595F;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);   
+}
+
+.footer img{
+    width: 100%;
+    height: 10%;
+   
+}
+.footer .first{
+    padding-right: 1cm;
+}
+.footer .logo{
+    display: flex;
+}
+.footer p{
+    color: white;
+    padding-top: 2cm;
+    font-size: 20px;
+}
+.footer h5{
+     color: white;
+     font-size: bold;
+     font-size: 20px;
+     padding-right: 10px;
+}
+.footer ul{
+    list-style-type: none;
+
+}
+.footer a{
+    color: white;
+    text-decoration: none;
+    line-height: 50px;
+}
+.footer i{
+    padding-top: 1cm;
+    font-size: 1cm;
+}
+.store{
+    display: flex;
+}
+.footer #white{
+    width: 20%;
+    height: 20%;
+}
+
+@media only screen and (max-width:700px){
+    .footer{
+        grid-template-columns: repeat(1,1fr);  
+    }
+    .footer img{
+        width: 30%;
+        height: 100%;
+       
+    }
+    .footer p{
+        color: white;
+        padding-top: 10px;
+        font-size: 20px;
+    }
+    .store img{
+        width: 5cm;
+        height: 5cm;
+    }
+    .store #white{
+        width: 5cm;
+    }
+}
+ /* Mens website */
+.body{
+    background-color: rgb(241, 241, 245);
+    margin-top: 4cm;    
+}
+#navigate{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+@media only screen and(max-width:653px){
+    #navigate{
+        grid-template-columns: repeat(1,1fr);
+    } 
+}
+#navigate #line1{
+    display: flex;
+
+}
+#navigate #line1 ul{
+    display: flex;
+    list-style-type: none;
+}
+.body #logo{
+    display: flex;
+}
+#navigate ul li a{
+    padding: 0 0 0 2em;
+    color: black;
+    font-size: .9em;
+    list-style-type: none;
+    text-decoration: none !important;
+    font-weight: bold;
+}
+
+#navigate a:hover{
+    color: red;
+}
+
+#navigate #home{
+    color: red;
+
+}
+#navigate #line2{
+    text-align: right;
+    margin-right: 4em;
+    padding-top: .2em;
+    color: rgb(241, 241, 245);
+}
+#navigate button{
+    color: black;
+    background-color: red;
+    font-size: .97em;
+    margin: 0 1em 0 0;
+    padding: .6em 1.5em .6em 1.5em;
+}
+
+#navigate #login{
+    border: none;
+}
+#navigate #sign{
+    border: none;
+    border: 2px solid rgb(241, 241, 245);
+    border-radius: .4em;
+}
+
+#line2 #glass {
+    position: absolute;
+    font-size: 1.6em;
+    padding-top: .3em;
+    color: black;
+
+}
+#navigate #arrow{
+    color: black;
+}
+.body .menu{
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    float: left;
+}
+.body .menu a {
+    
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin-left: 2cm;
+  }
+.body .menu i{
+    position: absolute;
+    top: 5.4cm;
+    justify-content: space-around;
+}
+
+/* end of first page */
+.sec{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.second{
+    position: absolute;
+    right: 28cm;
+    background-color: white;
+    width: 15cm;
+    margin-top: 2cm;
+    margin-left: 2cm;
+    box-shadow: 10px 10px 35px rgb(101, 115, 120);
+   
+}
+.second img{
+
+    width: 100%;
+}
+.top{
+    position: absolute;
+    margin-top: 4cm;
+    left: 20cm;
+}
+.top h3{
+    color: rgb(233, 19, 55);
+}
+.top h1{
+    font-size: 40px;
+}
+.top span{
+    color: rgb(233, 19, 55);
+    text-decoration: none;
+}
+@media only screen and (max-width:653px){
+    .top{
+         grid-template-columns: repeat(1,1fr);
+         
+       }
+     }
+.select{
+    display: flex;
+    justify-content: space-between;
+}
+.select h4{
+    color: rgb(233, 19, 55); 
+}
+.size{
+    display: flex;
+    justify-content: space-between;
+    font-size: 30px;
+}
+
+.top .btn{
+    display: flex;
+    
+}
+.top .btn button{
+    padding: 12px 15px;
+    border-radius: 5px;
+    
+}
+.top #btn1{
+    margin-right: 3cm;
+}
+#b{
+    border: 3px solid;
+    color: rgb(233, 19, 55);
+}
+#bb{
+    color:white;
+    font-weight: 800;
+    border: none;
+    background-image:linear-gradient(to right, rgb(235, 10, 164) , rgb(234, 155, 94));
+
+}
+.top h2{
+    color: grey;
+}
+.select h2{
+    color: black;
+}
+.shoes{
+margin-left: 2cm;
+}
+.shoes #nike1{
+    width: 10%;
+}
+.shoes #nike2{
+    position: absolute;
+    top: 24.6cm;
+    left: 9.4cm;
+    width: 12%;
+}
+.shoes #nike3{
+    width: 11%; 
+}
+ /* end of the second page */
+ 
+.third3{
+    position: absolute;
+    top: 36cm;
+}
+#similar-h1{
+    text-align: center;
+    padding: 1em 0 1em 0;
+    font-size: 3em;
+}
+.products-h1{
+    text-align: center;
+    padding: 1em 0 1em 0;
+    font-size: 3em;
+    
+}
+.products{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+
+@media only screen and (max-width:653px){
+ .products{
+      grid-template-columns: repeat(1,1fr);
+    }
+  }
+.shoe1{
+    background-color: white;
+    margin: 5%;
+    padding: 1em;
+    box-shadow: 0 2px 12px 4px rgb(101, 115, 120);
+    border-radius:5px; 
+}
+.shoe1 img{
+    position: relative;
+    width: 100%;
+    right: 1em;
+    top: -.3em;
+}
+.shoe1 .fa-heart{
+    font-size: 1.5em;
+
+}
+.shoe1 h2{
+    padding-top: 1em;
+    font-size: 1.3em;
+
+}
+.shoe1 #bag i{
+    float: right;
+    font-size: 1.3em;
+    bottom: 2em;
+}
+.shoe1 p{
+    font-size: .9em;
+    color: gray;
+}
+
+.shoe1 h3{
+    font-size: 1em;
+}
+
+.shoe1 #star{
+    font-size: .7em;
+    position: absolute;
+    text-align: right !important;
+    padding-bottom: 2em;
+    padding-left: 9em;
+}
+.shoe1 #star i{
+    color: yellow;
+ }
+/* end of third page */
+#footer{
+    position: absolute;
+    top: 57cm;
+}
+.body #footer{
+    margin-top: 2cm;
+    background-color: rgb(233, 19, 55);
+    padding-top: 5em;
+    padding-bottom: 1em;
+}
+#foot{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    margin: 0 5% 0 5%;
+}
+@media only screen and (max-width:700px){
+
+    .body .footer{
+      grid-template-columns: repeat(1,1fr);
+      text-align: center;
+    }
+    #contract{
+        text-align: center;    
+    }
+    #foot{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        margin: 0 5% 0 5%;
+    }
+  
+
+}
+
+.body .footer img{
+    width: 50%;
+}
+.body #logo2 p{
+    font-size: .8em;
+    color: white;
+    font-weight: bold;
+    line-height: 1.5em;
+  }
+ 
+#company{
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+    padding-left: 1.5em;
+    margin-bottom: -.3em;
+}
+#foot #contact{
+    padding-top: .5em;
+    font-size: 1em;
+    padding-bottom: 1em;
+}
+
+#info{
+    text-decoration: none;
+    font-size: .85em;
+   color: white;
+    padding-left: 2em;  
+    line-height: 2em;         
+}
+#contact a:hover{
+    color:rgb(233, 19, 55);
+}
+
+.icons{
+    margin-top: 1.5em;
+}
+
+.icons i{
+    color:black;
+    border: 1px solid white;
+    font-size: 1.4em;
+    padding: .4em;
+    border-radius: 100%;
+    background-color: white;
+    margin-left: .5em;
+    box-shadow: 0 2px 12px 4px #3434343d;
+}
+.icons i:hover{
+    background-color: #FF3D58;
+}
+
+.icons p{
+    font-size: 1em;
+    color: #ffffff;
+    font-weight: bold;
+    line-height: 1.5em;
+    margin-left: 1em;
+    padding-top: .5em;  
+}
+.body .store{
+    margin-left: .8em;
+}
+.icons img{
+    width: 40%;
+}
+
+.icons #apple{
+    padding-bottom: .2em;
+}
+
+#footer #copy{
+    padding-top: 2em;
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: .8em;
+}
+
+
+/* About Us web */
+#body{
+    background-color: #F0F0F0;
+}
+#figma{
+    background-image: url(/Images/figma.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+}
+.navbar{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+
+}
+.menuA{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    float: left;
+    margin-right: 21cm;
+    margin-top: 2cm;
+    padding-right: 100px;
+}
+.menuA h3{
+   position: absolute;
+   padding-left: 2cm;
+}
+.menuA a:hover{
+    color:#FF595F;
+}
+.menuA ul{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    list-style-type: none;
+}
+.menuA a{
+    text-decoration: none;
+    color: black;
+    padding-left: 3.5cm;
+}
+.menuB{
+    display: flex;
+    float: right;
+    margin-right: 2cm;
+}
+.menuB {
+    color: white;
+}
+.menuB #search1{
+    padding-top: 5px;
+    font-size: 40px;
+    padding-right:20px ;
+
+}
+.menuB p{
+    padding-left: 1cm;
+}
+.menuB #button1{
+    border: none;
+    background-color: transparent;
+    padding: 10px 15px;
+    color: white;
+    margin-right: 30px;
+    border-radius: 5px;
+
+
+}
+.menuB #button2{
+    padding: 10px 15px;
+    background-color: #FF595F;
+    border-color: white;
+    color: white;
+    border-radius: 5px;
+}
+@media only screen and (max-width:700px){
+
+    .navbar{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);   
+    }
+    .menuA{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        margin-top: 2cm;
+        padding-right: 10px;
+    }
+    .menuA ul{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        list-style-type: none;
+    }
+    .menuB p {
+        color: black;
+    }
+    .menuB #search1{
+        color: black;
+    }
+    .menuB span i {
+        color: black;
+    }
+    .menuB #button1{
+        color: black;
+    }
+  }
+  .aboutt img{
+    width: 80%;
+    border-radius: 10px;
+  }
+  .aboutt button{
+    border: none;
+    color: white;
+    background-image: linear-gradient(to top right,rgb(218, 24, 163),rgb(236, 131, 45) );
+  }
+  .aboutt h1{ 
+    font-size: 1.5cm;
+    text-align: center;
+  }
+  .page1{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-bottom: 2cm;
+  }
+  .page1{
+    font-size: 30px;
+  }
+  .page1 button{
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 3px solid;
+    margin-left: 6cm;
+  }
+@media only screen and (max-width:700px){
+    .page1{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        margin-bottom: 1cm;
+        font-size: 10px;
+      }
+    .aboutt h1{
+        font-size: 30px;
+      
+      }
+      .aboutt img{
+        width: 50%;
+        border-radius: 10px;
+      }
+      .page1 button{
+        padding: 5px 10px;
+        font-size: 10px;
+        border-radius: 5px;
+        border: 1px solid;
+        
+      }
+      .vision{
+        position: absolute;
+        top: 31.5cm;
+      }
+      #abtimg{
+        position: absolute;
+        top: 38.5cm;
+      }
+      #footer2{
+        position: absolute;
+        top: 52cm;
+      }
+      #approach{
+        position: absolute;
+        top: 47cm;
+      }
+      #footer2{
+        grid-template-columns: repeat(1,1fr);  
+    }
+    #footer2 img{
+        width: 30%;
+        height: 100%;
+       
+    }
+    #footer2 p{
+        color: white;
+        padding-top: 10px;
+        font-size: 20px;
+    }
+    .store img{
+        width: 5cm;
+        height: 5cm;
+    }
+    .store #white{
+        width: 5cm;
+    }
+  }
+  .store img{
+    width: 5cm;
+    height: 5cm;
+}
+#foot #logo2 p{
+    color: white;
+}
+.store #white{
+    padding-right: 2cm;
+}
+#body #footer2{
+    margin-top: 2cm;
+    background-color: rgb(233, 19, 55);
+    padding-top: 5em;
+    padding-bottom: 1em;
+}
+#footer2 #copy{
+    padding-top: 2em;
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: .8em;
+}
