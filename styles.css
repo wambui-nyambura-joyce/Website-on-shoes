@@ -10,51 +10,76 @@ body{
     background-size:cover;   
 }
 
-.firstpage .first{
+.navigation-bar{
     display: grid;
-    grid-template-columns: repeat(4,1fr);
-    
-}
-.menu{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);   
+    grid-template-columns: repeat(2,1fr);
+    margin: 2% 3% 0 7%;
 }
 
-.menu1 ul {
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
+@media only screen and(max-width:666px){
+    .navigation-bar{
+        grid-template-columns: repeat(1,1fr);
+    } 
+}
+
+.navigation-bar .left{
+    display: flex;
+}
+
+
+.navigation-bar .left ul{
+    display: flex;
     list-style-type: none;
 }
-.menu1 #home{
+
+.navigation-bar ul li a{
+    padding: 0 0 0 2em;
+    color: #4C4D4F;
+    font-size: .9em;
+    list-style-type: none;
+    text-decoration: none !important;
+    font-weight: bold;
+}
+.navigation-bar a:hover{
     color: #FF595F;
 }
-.menu1 a{
-    text-decoration: none;
-    color: black;
-    padding-right: 1.5cm;
+
+.navigation-bar .active{
+    color: #FF595F;
 }
-.menu2{
-    display: grid;
-    grid-template-columns: repeat(6,1fr);
+
+.navigation-bar .right{
     text-align: right;
-    margin-top: 12px;
-    margin-left: 15cm;
-    color: white;
+    margin-right: 4em;
+    padding-top: .2em;
+    color: #f0f0f0;
 }
-.menu2 button{
-    padding: 7px 15px;
-    background-color: transparent;
-    color: white;
-    border-color: #FF595F;
-    border-radius: 5px;
-    margin-right:1cm ;
+
+.navigation-bar button{
+    color: #f0f0f0;
+    background-color: #FF595F;
+    font-size: .97em;
+    margin: 0 1em 0 0;
+    padding: .6em 1.5em .6em 1.5em;
 }
-.menu2 #btn2{
-    background-color: #FF595F; 
+
+.navigation-bar .btn-1{
+    border: none;
 }
-.menu2 #btn1{
-    border: none ;
+
+.navigation-bar .btn-2{
+    border: none;
+    border: 2px solid #f0f0f0;
+    border-radius: .4em;
 }
+
+.right .s-icon2 i{
+    position: absolute;
+    font-size: 1.6em;
+    padding-top: .3em;
+
+}
+
 .secondA{
     padding-left: 25px;
 }
@@ -87,25 +112,11 @@ body{
     border: none;
 }
 @media only screen and (max-width:700px){
-    .first{
-         grid-template-columns: repeat(1,1fr);
-       }
-       .menu{
-        grid-template-columns: repeat(1,1fr);
-       }
-       .menu2{
-        grid-template-columns: repeat(1,1fr);
-        float: left;
-        padding-left: 2px;
-       }
+   
        .secondA h1{
         font-size: 1cm;  
     }
-       .menu1 ul {
-        display: grid;
-        grid-template-columns: repeat(1,1fr);
-        line-height: 1cm; 
-    }
+    
 
      }
 /* Start of second page */
@@ -227,305 +238,234 @@ body{
 }
 
 /* Start of third page */
-.thirdpage{
-    margin-top: 2cm;
+#featured-products{
+    margin: 10% 3% 10% 7%;
+
 }
-.thirdpage h1{
-    font-size: 40px;
+
+.featured-products-h1{
     text-align: center;
+    padding: 1em 0 1em 0;
+    font-size: 3em;
+    font-family: 'Times New Roman', Times, serif;
+    color: #4C4D4F;
 }
-
-.thirdpage li #red{
-    color: #FF595F;
-    text-decoration: none;
-
-}
-.thirdpage ul{
-    font-weight: 700;
-    font-size: 25px;
-    list-style-type: none;
-    display: grid;
-    grid-template-columns: repeat(4,1fr); 
-}
-.thirdpage li{
-    padding-right: 2cm;
-}
-.shoeB{
+.featured-products{
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    margin-left: 25px;
 }
-@media only screen and (max-width:700px){
-    .shoeB{
-        grid-template-columns: repeat(1,1fr);  
+
+
+@media only screen and (max-width:653px){
+ .featured-products{
+      grid-template-columns: repeat(1,1fr);
     }
-    .thirdpage ul{
-        font-weight: 700;
-        font-size: 25px;
-        list-style-type: none;
-        grid-template-columns: repeat(1,1fr); 
-    }
+  }
+
+  #featured-products ul{
+    display: flex;
+    color: #4C4D4F;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+    list-style-type: none;
+  }
+
+  #featured-products ul li{
+    padding: 1em;
+    margin-left: -1em;
+  }
+
+.red{
+    color: #FF595F;
 }
-.shoeB .white1{
-    margin-top: 2cm;
-    width: 8cm;
-    height: 7cm;
-    background-color: white;
-    border-radius: 5px;
-    margin-left: 25px;
+
+.shoe-1{
+    background-color: #ffffff;
+    margin: 5%;
+    padding: 1em;
+    box-shadow: 0 2px 12px 4px #3434343d;
+    border-radius: .5em;
 }
-.descrip{
-    position: absolute;
-    top: 38.7cm;
-    padding-left: 15px;
-}
-.white1 img{
+
+.shoe-1 img{
     position: relative;
-    width: 80%;
+    width: 100%;
+    right: 1em;
+    top: -.3em;
+    
 }
-.white1 h2{
-    padding-top: 1px;
+
+.shoe-1 .fa-heart{
+    font-size: 1.5em;
+}
+
+.shoe-1 h2{
+    padding-top: 1em;
     font-size: 1.3em;
+    color: #4C4D4F;
 }
-.white1 #heart{
-   position: absolute;  
-   color: black;
-   top: 35.2cm;
-   padding-left: 5px;
-   font-size: 25px;
-}
-.white1 #bag i{
+
+.shoe-1 .h2-span i{
     float: right;
-    padding-left: 5cm;
     font-size: 1.3em;
     bottom: 2em;
-}
-.white1 p{
-    font-size: 10px;
-    color:grey;
+    color: #4C4D4F;
 }
 
-.white1 h3{
+.shoe-1 p{
+    font-size: .9em;
+    color: #919191;
+}
+
+.shoe-1 h3{
     font-size: 1em;
+    color: #4C4D4F;
 }
 
-.white1 #star{
-    font-size: 8px;
+.shoe-1 .h3-span{
+    font-size: .7em;
     position: absolute;
-    color:grey;
+    color: #4C4D4F;
     text-align: right !important;
     padding-bottom: 2em;
     padding-left: 9em;
 }
- .white1 #star i{
-    color: yellow;
+ .shoe-1 .h3-span i{
+    color: #ffd000;
  }
 
- .shoeC{
+ .featured-products-button{
+    text-align: center;
+    padding: 2em 0 2em 0;
+ }
+
+ .featured-products-button button{
+    text-align: center;
+    font-size: 1.5em;
+    padding: 1em 2em 1em 2em;
+    font-weight: bold;
+    color: #FF595F;
+    border: 2px solid #FF595F;
+ }
+
+
+/* End Featured-products */
+
+
+
+/* New arrivals */
+.new-arrivals-h1{
+   text-align: center;
+   font-size: 2em;
+   font-family: 'Times New Roman', Times, serif;
+   color: #4C4D4F;
+
+}
+
+.new-arrivals-divs{
     display: grid;
-    margin-left: 25px;
-    margin-bottom: 1cm;
-    grid-template-columns: repeat(4,1fr); 
+    grid-template-columns: repeat(2,1fr);
 }
-@media only screen and (max-width:700px){
-    .shoeC{
-        grid-template-columns: repeat(1,1fr);  
+
+
+@media only screen and (max-width:653px){
+    .new-arrivals-divs{
+      grid-template-columns: repeat(1,1fr);
     }
-    .descrip{
-        position: absolute;
-        top: 58.9cm;
-        padding-left: 15px;
+}
+
+
+.new-arrivals-div1{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    box-shadow: 0 2px 12px 4px #3434343d;
+    margin: 5%;
+    border-radius: 1em;
+}
+
+
+@media only screen and (max-width:653px){
+    .new-arrivals-divs1{
+      grid-template-columns: repeat(1,1fr);
     }
-    .white2 #heart2{
-        position: relative;
-        color: black;
-        top: 64.2cm;
-        padding-left: 5px;
-        font-size: 25px;
-     }
-}
- .shoeC .white2{
-    margin-top: 2cm;
-    width: 8cm;
-    height: 7cm;
-    background-color: white;
-    border-radius: 5px;
-    margin-left: 25px;
-}
-.descrip2{
-    position: absolute;
-    top: 47.7cm;
-    padding-left: 15px;
-}
-.white2 img{
-    position: relative;
-    width: 80%;
-}
-.white2 h2{
-    padding-top: 1px;
-    font-size: 1.3em;
-}
-.white2 #heart2{
-   position: absolute;
-   color: black;
-   top: 44.2cm;
-   padding-left: 5px;
-   font-size: 25px;
-}
-.white2 #bag2 i{
-    float: right;
-    padding-left: 5cm;
-    font-size: 1.3em;
-    bottom: 2em;
-}
-.white2 p{
-    font-size: 10px;
-    color:grey;
+  }
+
+.new-div-image{
+    background-image: url(Images/shoe13.jpeg);
+    border-radius: 12px 0 0 12px;
+    background-size:cover;
 }
 
-.white2 h3{
-    font-size: 1em;
+.new-div-image1{
+    background-image: url(Images/shoe14.jpeg);
+    border-radius: 12px 0 0 12px;
+    background-size:cover;
 }
 
-.white2 #star2{
-    font-size: 8px;
-    position: absolute;
-    color:grey;
-    text-align: right !important;
-    padding-bottom: 2em;
-    padding-left: 9em;
-}
- .white2 #star2 i{
-    color: yellow;
- }
-
-#button{
-    text-align: center ;
-}
-#button button{
-    color: rgb(165, 14, 140);
-    padding: 10px 20px;
-    border-radius: 5px;
-    background: linear-gradient(white, white) padding-box,linear-gradient(to top right, rgb(184, 28, 190), rgb(202, 144, 19)) border-box;
-    border: 3px solid transparent;
-}
-/* Start of the forth page */
-.forthpage{
-    margin-left: 25px;
-}
-.forthpage h1{
-    font-size: 40px;
+.new-div-div{
+    padding: 2em;
     text-align: center;
 }
-.shoeD{
-    display: grid;
-    display: flex;
-    grid-template-columns: repeat(2,1fr);  
-}
-@media only screen and (max-width:700px){
-    .shoeD{
-        grid-template-columns: repeat(1,1fr);  
-    }
-    .shoeD img{
-        position: relative;
-        width: 5%;   
-    }
-    .forthpage h1{
-        font-size: 20px;
-        text-align: center;
-    }
-    #white1 b {
-        font-size: 15px;
-        color: gray;
-        text-decoration: line-through #FF595F;
-    }
-    #white1 h2 {
-        font-size: 15px;
-    }
-    .shoeD p{
-        font-size: 10px;
-    }
-    #white1 .btn1{
-        padding: 5px 16px;
-        background:linear-gradient(to top right, rgb(210, 16, 174), rgb(202, 144, 19));
-        border: none;
-        border-radius: 6px;
-        color: white;
-        font-size: 9px;
-        font-weight: bold;
-    }
-    .buttons .btn2{
-        padding: 5px 16px;
-        border-radius: 6px;
-        background: linear-gradient(white, white) padding-box,linear-gradient(to top right, rgb(184, 28, 190), rgb(202, 144, 19)) border-box;
-        border: 3px solid transparent;
-        color:rgb(165, 14, 140) ;
-        font-size: 9px;
-        font-weight: bold;
-    }
-}
-.descrip1{
-    position: relative;
-    padding-left: 2cm;
-}
-.shoeD img{
-    position: relative;
-    width: 20%;
-}
-.shoeD #image{
-    position: relative;
-    width: 20%;   
-}
-.forthpage #white1{
-    display: grid;
-    width: 11cm;
-    height: 10cm;
-    background-color: white;
-    margin-right: 2cm;
-    border-radius: 5px;
-    box-shadow: 10px 10px 35px rgb(101, 115, 120);
-}
-#white1 h1{
-    color: #FF595F;
-}
-#white1 h4 b{
-    color: #FF595F;
-}
-#white1 b {
-    color: gray;
-    text-decoration: line-through #FF595F;
+
+.new-div-div h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2em;
+    color: #F2055C;
 }
 
-#white1 h4{
-    color: gray;
+.new-div-div h2{
+    font-size: 1em;
+    color: #363636;
 }
-#white1 .btn1{
-    padding: 10px 21px;
-    background:linear-gradient(to top right, rgb(210, 16, 174), rgb(202, 144, 19));
-    border: none;
-    border-radius: 6px;
-    color: white;
-    font-size: 9px;
+
+.new-div-div b{
+    color: #7e7e7e;
+    padding-right: .5em;
+}
+
+.new-div-div p{
+    font-size: .8em;
+    color: #4C4D4F;
     font-weight: bold;
 }
-.buttons .btn2{
-    padding: 10px 21px;
-    border-radius: 6px;
-    background: linear-gradient(white, white) padding-box,linear-gradient(to top right, rgb(184, 28, 190), rgb(202, 144, 19)) border-box;
-    border: 3px solid transparent;
-    color:rgb(165, 14, 140) ;
-    font-size: 9px;
+
+.new-div-div h4{
+    color: #7e7e7e;
+    padding-right: .5em;
+}
+.new-div-div h4 b{
+    color: #F2055C;
+}
+
+.new-div-div .btn-a{
+    padding: 1em 1.5em 1em 1.5em;
+    background-image: linear-gradient(to right, #FF0541, #FF3D58);
+    border: none;
+    border-radius: .6em;
+    color: #f0f0f0;
+    font-size: .9em;
+    font-weight: bold;
+}
+
+.new-div-div .bt{
+    padding: 1em 1.5em 1em 1.5em;
+    border: 2px solid #FF3D58;
+    border-radius: .6em;
+    color: #FF0541;
+    font-size: .9em;
     font-weight: bold;
 }
 
 /* Fifth page */
 .fifthpage h3{
+    font-size: 3vw;
     padding-top: 3cm;
     text-align: center;
     color: #FF595F;
 }
 .fifthpage h1{
-    font-size: 40px;
+    font-size: 2vw;
     padding-left: 25px;
 }
 .circles{
@@ -1085,7 +1025,17 @@ margin-left: 2cm;
     position: absolute;
     top: 57cm;
 }
+#ftr{
+    position: absolute;
+    top: 133cm; 
+}
 .body #footer{
+    margin-top: 2cm;
+    background-color: rgb(233, 19, 55);
+    padding-top: 5em;
+    padding-bottom: 1em;
+}
+#ftr{
     margin-top: 2cm;
     background-color: rgb(233, 19, 55);
     padding-top: 5em;
@@ -1097,7 +1047,11 @@ margin-left: 2cm;
     margin: 0 5% 0 5%;
 }
 @media only screen and (max-width:700px){
-
+#ftr{
+    position: absolute;
+   top: 224cm;
+   width: 80%;
+}
     .body .footer{
       grid-template-columns: repeat(1,1fr);
       text-align: center;
@@ -1192,7 +1146,13 @@ margin-left: 2cm;
     font-weight: bold;
     font-size: .8em;
 }
-
+#ftr #copy{
+    padding-top: 2em;
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: .8em;
+}
 
 /* About Us web */
 #body{
@@ -1408,3 +1368,69 @@ margin-left: 2cm;
     font-weight: bold;
     font-size: .8em;
 }
+
+/*Last page Contact Us*/
+#question{
+    text-align: center;
+    font-size: 30px;
+}
+.contactt{
+    margin-top: 2%;
+    margin-left: 25%;
+}
+.contactt input{
+    margin-bottom: 1%;
+    font-size: 25px;
+    padding: 2% 32% 2% 1%;
+    border-radius: 30px;
+    background-color: white;
+    border:none;
+}
+.contactt #name{
+    padding: 2% 32% 28% 1%;
+}
+#btN{
+    margin-left: 41%;
+    margin-top: 1%;
+    padding: 1% 2%;
+    background-image: linear-gradient(to top right,rgb(218, 24, 163),rgb(236, 131, 45) );
+    border-radius: 26px;
+    border: none;
+    color: white;
+    font-size: 25px;
+}
+.contactt i{
+    position: absolute;
+    margin-top: 2%;
+    margin-left: 41%;
+    font-size: xx-large;
+    color: grey;
+}
+
+    @media only screen and (max-width:700px){
+        #question{
+            float: left;
+            margin-left: 1%;
+        
+        }
+        .contactt{
+            margin-left: 3%;
+        }
+        .contactt input{
+            font-size: 20px;
+            padding: 2% 0% 2% 1%;
+        }
+        .contactt #name{
+            padding: 2% 0% 300px 1%
+        }
+        #btN{
+            margin-left: 5%;
+            font-size: 20px;
+           
+        }
+        .contactt i{
+            margin-left: 41%;
+            font-size: large;
+            color: grey;
+        }   
+    }
